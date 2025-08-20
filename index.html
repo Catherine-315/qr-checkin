@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Check-in Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Event Check-in</h1>
+    </div>
+
+    <div id="login-container" class="content">
+        <h2>Admin Login</h2>
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="login-button">Log In</button>
+        <p id="login-message"></p>
+    </div>
+    
+    <div id="scanner-container" class="content hidden">
+        <button id="startButton">Start Scanner</button>
+        <div class="camera-selection">
+            <label for="cameraSelect">Select Camera:</label>
+            <select id="cameraSelect"></select>
+        </div>
+        <div id="reader"></div>
+        <div id="result">Tap "Start Scanner" to begin.</div>
+    </div>
+
+    <audio id="successSound" src="sound-effect-3047.mp3" preload="auto"></audio>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>
