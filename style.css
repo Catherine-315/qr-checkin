@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white; /* The background of the Figma design */
+}
+
+/* Make the body or a container relative to position everything else inside it */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background image */
+.background-image {
+    width: 514px;
+    height: 938px;
+    position: absolute;
+    left: -60px;
+    top: -43px;
+    object-fit: cover;
+}
+
+/* The pink card */
+.background-card {
+    width: 290px;
+    height: 520px;
+    position: absolute;
+    left: 52px;
+    top: 166px;
+    background: #FFEAEA;
+    border-radius: 46px;
+    border: 3px black solid;
+    backdrop-filter: blur(2px);
+}
+
+/* The main content */
+#login-container {
+    width: 290px; /* Match the background card */
+    position: absolute;
+    left: 52px; /* Match the background card */
+    top: 166px; /* Match the background card */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Text and form elements */
+.login-title {
+    position: absolute;
+    left: 86px;
+    top: 247px;
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    font-family: 'Just Me Again Down Here', cursive; /* You'll need to import this font */
+    font-weight: 400;
+}
+
+.login-subtitle {
+    position: absolute;
+    left: 91px;
+    top: 305px;
+    color: black;
+    font-size: 64px;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-weight: 400;
+}
+
+#password-input {
+    /* Style from your previous CSS, but with absolute positioning */
+    width: 240px;
+    position: absolute;
+    left: 80px;
+    top: 426px;
+    padding: 12px 16px; /* Match Figma's padding */
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    background: white;
+}
+
+#login-button {
+    /* Style from your previous CSS, but with absolute positioning */
+    width: 100px;
+    position: absolute;
+    left: 159px;
+    top: 485px;
+    padding: 12px;
+    background: #FFE8A3;
+    border-radius: 8px;
+    outline: 2px solid #BF6A02;
+    border: none;
+}
+
+/* General classes for scanner and hidden elements */
+.hidden {
+    display: none;
+}
+
+#scanner-container {
+    /* You'll need to manually place this section once login is done */
+    /* It's best to use a more flexible layout for this part of the app */
+}
+
+/* ... you will need to style the scanner part of the app as well */
